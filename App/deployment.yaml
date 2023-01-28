@@ -3,8 +3,8 @@ kind: Deployment
 metadata:
   name: meudeployment
 spec:
-  replicas: 4 
-  selector:
+  replicas:  
+  selector: 2
     matchLabels:
       app: web
   template:
