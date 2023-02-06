@@ -28,5 +28,5 @@ spec:
   ports:
     - port: 80
       protocol: TCP
-      nodePort: 30002 # força a porta a usar
+      nodePort: 30003 # força a porta a usar
   type: NodePort # seleciona o tipo de service que sera usado
