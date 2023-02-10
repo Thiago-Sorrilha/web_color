@@ -28,8 +28,8 @@ spec:
   ports:
     - port: 80
       protocol: TCP
-      #targetPort: 32000
-      nodePort: 30003 # força a porta a usar
+      targetPort: 8099
+      #nodePort: 30003 # força a porta a usar
   #type: ClusterIP
-  type: NodePort # seleciona o tipo de service que sera usado
+  type: LoadBalancer # seleciona o tipo de service que sera usado
   
