@@ -17,16 +17,3 @@ spec:
         image: fabricioveronez/web-page:blue
         ports:
         - containerPort: 80
----
-apiVersion: v1
-kind: Service
-metadata:
-  name: web-page
-spec:
-  selector: 
-    app: web # indica quais os pods alvo referenciados pela label.
-  ports:
-    - port: 80
-      protocol: TCP
-      nodePort: 30002 # força a porta a usar
-  type: NodePort # seleciona o tipo de service que sera usado
