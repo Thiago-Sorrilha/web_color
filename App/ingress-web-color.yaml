@@ -8,7 +8,7 @@ metadata:
 spec:
   ingressClassName: nginx
   rules:
-  - host: webcolor-thiago.net #endereço do host alv
+  - host: webcolor-thiago.net #endereço do host alvoo
     http:
       paths:
        - path: "/web"
