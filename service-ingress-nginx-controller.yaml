@@ -1,0 +1,47 @@
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    kubectl.kubernetes.io/last-applied-configuration: |
+      {"apiVersion":"v1","kind":"Service","metadata":{"annotations":{},"labels":{"app.kubernetes.io/component":"controller","app.kubernetes.io/instance":"ingress-nginx","app.kubernetes.io/name":"ingress-nginx","app.kubernetes.io/part-of":"ingress-nginx","app.kubernetes.io/version":"1.5.1"},"name":"ingress-nginx-controller","namespace":"ingress-nginx"},"spec":{"ipFamilies":["IPv4"],"ipFamilyPolicy":"SingleStack","ports":[{"appProtocol":"http","name":"http","port":80,"protocol":"TCP","targetPort":"http"},{"appProtocol":"https","name":"https","port":443,"protocol":"TCP","targetPort":"https"}],"selector":{"app.kubernetes.io/component":"controller","app.kubernetes.io/instance":"ingress-nginx","app.kubernetes.io/name":"ingress-nginx"},"type":"LoadBalancer"}}
+  creationTimestamp: "2023-02-17T12:50:49Z"
+  labels:
+    app.kubernetes.io/component: controller
+    app.kubernetes.io/instance: nginx
+    app.kubernetes.io/name: ingress-nginx
+    app.kubernetes.io/part-of: ingress-nginx
+    app.kubernetes.io/version: 1.5.1
+  name: ingress-nginx-controller
+  namespace: ingress-nginx
+  resourceVersion: "565656"
+  uid: fd81abea-a777-4b3a-b0e8-f9bcef616753
+spec:
+  clusterIP: 10.43.40.44
+  clusterIPs:
+  - 10.43.40.44
+  externalTrafficPolicy: Cluster
+  internalTrafficPolicy: Cluster
+  ipFamilies:
+  - IPv4
+  ipFamilyPolicy: SingleStack
+  ports:
+  - appProtocol: http
+    name: http
+    nodePort: 30087
+    port: 80
+    protocol: TCP
+    targetPort: http
+  - appProtocol: https
+    name: https
+    nodePort: 30946
+    port: 443
+    protocol: TCP
+    targetPort: https
+  selector:
+    app.kubernetes.io/component: controller
+    app.kubernetes.io/instance: ingress-nginx
+    app.kubernetes.io/name: ingress-nginx
+  sessionAffinity: None
+  type: LoadBalancer
+status:
+  loadBalancer: {}
