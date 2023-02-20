@@ -11,7 +11,7 @@ spec:
   - host: webcolor-thiago.net #endereço do host alvo
     http:
       paths:
-       - path: /
+       - path: "/web"
          pathType: Prefix
          backend:
           service:
