@@ -11,10 +11,10 @@ spec:
   - host: webcolor-thiago.net #endereço do host alvoo
     http:
       paths:
-       - path: "/web"
+       - path: "/color"
          pathType: Prefix
          backend:
           service:
-            name: web
+            name: color
             port:
               number: 80
