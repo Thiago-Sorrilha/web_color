@@ -4,7 +4,7 @@ metadata:
   name: web-color
 spec:
   selector: 
-    app: color # indica quais os pods alvo referenciados pela label.
+    app: web-color # indica quais os pods alvo referenciados pela label.
   ports:
     - port: 80
       targetPort: 80
