@@ -3,14 +3,14 @@ kind: Deployment
 metadata:
   name: meudeployment
 spec:
-  replicas:  4
+  replicas:  5
   selector: 
     matchLabels:
-      app: color
+      app: web-color
   template:
     metadata:
       labels:
-        app: color
+        app: web-color
     spec:
       containers:
       - name: site
