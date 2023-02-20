@@ -4,8 +4,8 @@ metadata:
   name: web-color
 spec:
   selector: 
-    app: web # indica quais os pods alvo referenciados pela label.
+    app: color # indica quais os pods alvo referenciados pela label.
   ports:
     - port: 80
       targetPort: 80
-  type: ClusterIP # seleciona o tipo de service que sera usado
+  type: LoadBalancer # seleciona o tipo de service que sera usado

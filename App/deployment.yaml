@@ -6,11 +6,11 @@ spec:
   replicas:  3
   selector: 
     matchLabels:
-      app: web
+      app: color
   template:
     metadata:
       labels:
-        app: web
+        app: color
     spec:
       containers:
       - name: site
