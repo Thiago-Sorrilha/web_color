@@ -9,7 +9,7 @@ spec:
   - host: webcolor-thiago.net #endereço do host alvoo
     http:
       paths:
-       - path: "/color"
+       - path: "/"
          pathType: Prefix
          backend:
           service:
